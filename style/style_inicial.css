@@ -1,0 +1,179 @@
+/*Limpar formatações padrão*/
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px
+}
+
+html, body {
+	font-size: 1em;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #e6e6e6;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+}
+
+aside li, h3{
+	cursor: pointer;
+}
+
+p, h3{
+	white-space: pre;
+}
+
+/** Cabeçalho **/
+#area-cabecalho {
+	background-color: #f7b600;
+	padding: 15px;
+	text-align: center;
+	margin-bottom: 22px;
+    height: 30px;
+	position: fixed;
+	width: 100%;
+}
+#area-cabecalho a {
+	margin-left: 20px;
+    margin-right: 20px;
+}
+
+#logo{
+	height: 100px;
+	width: 100px;
+	margin-top: -35px;
+}
+
+/** Menu lateral esquerda **/
+#lateral-esquerda {
+    width: 20%;
+}
+#area_lateral {
+	width: 240px;
+	top: 12%;
+	float: left;
+	background-color: white;
+	position: fixed;
+	color: #f7b600;
+	margin-left: 2%;
+	box-shadow: 2px 2px 1px lightgray;
+	height: max-content;
+	border-radius: 8px;
+	margin-right: 2%;
+	z-index: 2;
+}
+#area_lateral h3 {
+	padding-left: 15px;
+	padding-top: 7px;
+}
+aside ul {
+	background-color: #ffffdd;
+	width:100%;
+	padding-left: 0%;
+	
+}
+ul li {
+	list-style-type: none;
+	padding: 5px;
+	padding-left: 10px;
+}
+
+.litop{
+	padding-top: 10px;
+}
+
+.libottom{
+	padding-bottom: 10px;
+}
+hr {
+	border-bottom:1px solid #f7b600 ;
+	border-top: none;
+}
+#columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+	/* border: 1px solid yellow; */
+
+}
+#lateral-esquerda {
+	/* border: 1px solid yellow; */
+    flex: 20%;
+}
+
+#h3perfil, #adocao {
+	white-space: pre;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/** Menu lateral direita **/
+#lateral-direita {
+	/* border: 1px solid green; */
+    flex: 20%;
+}
+#weather {
+
+	max-width:240px;
+	position: fixed;
+	left: 0%;
+	margin-left: 2%;
+	border-radius: 8px;
+	
+	bottom: 16%;
+	z-index:1;
+	display: block;
+	border: solid #f7b600 8px;
+	box-sizing: border-box;
+
+}
+
+/** Conteúdo principal **/
+#principal {
+    margin-top: 72px;
+	flex: 60%;
+	height: 400%;
+	/* border: 1px solid blue; */
+} 
+/** Rodapé **/
+#rodape {
+	height: 8px;
+	width: 100%;
+	text-align: center;
+    background: #CCC;
+    padding-top: 3px;
+	padding-bottom: 10px;	
+	position: fixed;
+    bottom: 0%;
+    
+}
+
+#rodape:hover {
+	height: 70px;
+	width: 100%;
+	text-align: center;
+    background: #CCC;
+    padding-top: 3px;
+	padding-bottom: 10px;	
+	position: fixed;
+    bottom: 0%;
+    
+}
+
+#noticias{
+	max-width:20%;
+	position: fixed;
+	right: 0%;
+	margin-right: 2%;
+	border-radius: 8px;
+	bottom: 15%;
+	top: 12%;
+
+	
+}

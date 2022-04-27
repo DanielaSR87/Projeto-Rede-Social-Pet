@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Pet</title>
+    <link rel="stylesheet" href="./login_style/cadastro.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="../ícones/favicon.ico">
+
+</head>
+<body>
+    <div class="containerLogin">
+        <div class="infoLogin">
+            <h1>Novo Cadastro</h1>
+
+            <div id="msgErroCadastro"></div>
+            <div id="msgSucessoCadastro"></div>
+
+
+            <div class="userSenha">
+                <input type="text" id="nome" placeholder=""required>  <!--required signifivca que vai ser obrigatori oeu preencher esse campo -->
+                <label id="labelNome" for="nome">Nome</label>
+            </div>
+
+            <div class="userSenha">
+                <input type="text" id="usuario" placeholder=""required>
+                <label id="labelUsuario" for="usuario">Usuario</label>
+            </div>
+
+
+            <div class="userSenha">
+                <input type="password" id="senha" placeholder=""required>
+                <label id="labelSenha" for="senha">Senha</label>
+                <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+
+            <div class="userSenha">
+                <input type="password" id="confirmSenha" placeholder=""required>
+                <label id="labelConfirmSenha" for="confirmSenha">Confirmar Senha</label>
+                <i id="confirmarSenha" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+
+            <div class="botao">
+                <button onclick="cadastrar()">Cadastrar</button> <!--Criação botão cadastrar, foi adicionado um evento 
+                    onde quando o botao for clicado, irei chamar a função cadastrar-->
+                <i class="fa fa-chevron-circle-left fa-2x" aria-hidden="true"><a href="./loginNovo.html">Voltar</a> </i>
+            </div>
+    
+        </div>
+    </div>
+    <script src="./login_app/cadastro.js"></script>
+</body>
+</html>

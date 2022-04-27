@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="perfil_style/perfil_style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+ 
+<body>
+    <main>
+        <section class="sections" id="fotoenome">
+
+
+            <img id="backpic" class="fotoclick" src="tamara-andreeva-priroda-peizazh-gory-altai-zhivotnoe-kot.jpg"
+                alt="Gato na paisagem">
+
+            <div id="fotosperfilenome">
+                <div class="cadafotoenome" id="nomefotouser">
+                    <img class="fotoclick" id="fotoperfil" src="My project (2).png"
+                        alt="Homem com um gato ao redor do pescoço.">
+
+                    <input id="imageUpload" type="file" name="profile_photo" placeholder="Photo" required="" capture>
+
+                    <p id="nomeAtual">Fulano de tal</p>
+                </div>
+                <div id="fotonomeanimais">
+                    <div class="cadafotoenome BICHO" id="cadastro-1">
+                        <img class="fotoclick fotobicho" src="cat1.jpg" alt="">
+                        <input class="botaobicho" type="file" name="profile_photo" placeholder="Photo" required="" capture>
+                        <p class="bichop">Bichano </p>
+                    </div>
+                    <div class="cadafotoenome BICHO" id="cadastro-2">
+                        <img class="fotoclick fotobicho" src="cat2.jpeg" alt="">
+                        <input class="botaobicho" type="file" name="profile_photo" placeholder="Photo" required="" capture>
+                        <p class="bichop">Gatildo </p>
+                    </div>
+                    <div class="cadafotoenome BICHO" id="cadastro-3">
+                        <img class="fotoclick fotobicho" src="cat3.jpeg" alt="">
+                        <input class="botaobicho" type="file" name="profile_photo" placeholder="Photo" required="" capture>
+                        <p class="bichop">Porcão</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="sections" id="dados">
+            <h3>Dados</h3>
+            <h4>Nome </h4>
+            <div class="dado">
+                <input id="novoNome"placeholder="Fulano de tal" type="text"><img class="lapinho" src="pencil-16.png">
+                <button onclick="alterarNome()" id="alteracaoNome"class="alterar" type="submit">Alterar</button>
+            </div>
+            <hr>
+            <h4>User</h4>
+            <div class="dado">
+                
+                <input value="fulano.detal" type="text">
+            
+            </div>
+            <hr>
+            <h4 >Celular</h4>
+            <div class="dado">
+                
+                <input value="(xx) xxxxx-xxxx" type="text"><img class="lapinho" src="pencil-16.png">
+                <button class="alterar" type="submit">Alterar</button>
+            </div>
+            <hr>
+            <h4>Data de nascimento</h4>
+            <div class="dado">
+                
+                <input type="date" value="05/11/1880">
+                <button class="alterar" type="submit">Alterar</button>
+            </div>
+            <hr>
+            <img id="setaesquerda" onclick="abrirDados ()" src="./arrow-30-16.png" alt="">
+            <div style="display: none;" id="seusbichos">
+                <table id="tabela-animais">
+                    <tbody id="tabelatbody">
+                        <tr>
+                            <td>
+                                <h4>Tipo</h4>
+                            </td>
+                            <td>
+                                <h4>Nome</h4>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="umanimal" id="cadastro-1">
+                            <td><input list="tipo-de-animal" placeholder="Gato"></td>
+                            <td><input class="nomeAnimal" type="text" value="Bichano"><img class="lapinho2" src="pencil-16.png"><button class="alterarAnimal" type="submit">Alterar</button></td>
+                            
+                            <td></td>
+                            <td><img class="xis" src="x-mark-16.png" onclick="xis(event)"></td>
+                        </tr>
+                        <tr class="umanimal" id="cadastro-2">
+                            <td><input list="tipo-de-animal" placeholder="Gato"></td>
+                            <td><input class="nomeAnimal" type="text" value="Gatildo"><img class="lapinho2" src="pencil-16.png"><button class="alterarAnimal" type="submit">Alterar</button></td>
+                            <td></td>
+                            <td><img class="xis" src="x-mark-16.png" onclick="xis(event)"></td>
+                        </tr>
+                        <tr class="umanimal" id="cadastro-3">
+                            <td><input list="tipo-de-animal" placeholder="Gato"></td>
+                            <td><input class="nomeAnimal"  type="text" value="Porcão"><img class="lapinho2" src="pencil-16.png"><button class="alterarAnimal" type="submit">Alterar</button></td>
+                            <td></td>
+                            <td><img class="xis" src="x-mark-16.png" onclick="xis(event)"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <img onclick="addPet ()" id="mais" src="./plus-16.png" alt="">
+            </div>
+            <hr id="hroculto" style="visibility: hidden;">
+        </section>
+        <section class="sections" id="amigos">
+            <h3>Amigos</h3>
+            <div id="fotoenomeamigos">
+                <div class="amigo">
+                    <img class="fotoamigos" src="pessoas/avatar-ebd3057ca403b150cb7c5876295d394c.jpg" alt="">
+                    <p>Joana Matos</p>
+                </div>
+                <div class="amigo">
+                    <img class="fotoamigos" src="pessoas/avatar-4dce7152af91c3f3c100b6ac78878612.jpg" alt="">
+                    <p>Célia Ramos</p>
+                </div>
+                <div class="amigo">
+                    <img class="fotoamigos" src="pessoas/avatar-860235f9e778df474c0d708d2753d4c7.jpg" alt="">
+                    <p>Angela Maroni</p>
+                </div>
+                <div class="amigo">
+                    <img class="fotoamigos" src="pessoas/avatar-bf193c77f98e0862831168d080c3035b.jpg" alt="">
+                    <p>Gláucia Báucio</p>
+                </div>
+                
+            </div>
+            <p class="vertudo">Ver tudo ></p>
+        </section>
+        <section class="sections" id="fotos">
+            <h3>Fotos</h3>
+            <div id="asfotos">
+                <img src="catcouch.jpg" alt="" class="fotos"><img src="catcouch.jpg" alt="" class="fotos"><img src="catcouch.jpg" alt="" class="fotos"><img src="catcouch.jpg" alt="" class="fotos"><img src="catcouch.jpg" alt="" class="fotos"><img src="catcouch.jpg" alt="" class="fotos"><img src="catcouch.jpg" alt="" class="fotos"><img src="catcouch.jpg" alt="" class="fotos"><img src="catcouch.jpg" alt="" class="fotos"><img src="catcouch.jpg" alt="" class="fotos"><img src="catcouch.jpg" alt="" class="fotos"><img src="catcouch.jpg" alt="" class="fotos"><img src="catcouch.jpg" alt="" class="fotos"><img src="catcouch.jpg" alt="" class="fotos">
+            </div>
+            <p class="vertudo">Ver tudo ></p>
+        </section>
+        <div id="postagensUsuario">
+        </main>
+        </div>
+        <datalist id="tipo-de-animal">
+            <option value="Gato"></option>
+            <option value="Cachorro"></option>
+            <option value="Ave"></option>
+            <option value="Coelho"></option>
+            <option value="Outro"></option>
+
+        </datalist>
+        <script async src="https://srv2.weatherwidget.org/js/?id=ww_d44dd463517c8"></script>
+        <script src="./perfil_app/perfil_app.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

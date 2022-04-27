@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style/style_feed.css">
+	<title>Social Pet</title>
+
+</head>
+
+<body>
+
+
+	<div id="area-postagens">
+		<!--Início postagens -->
+		<div id="chama-form" style="display: block;">
+			<!--Início formulário de postagem -->
+			<button id="botaoformulario" onclick="mostraformulario()">Poste sobre seu pet...</button>
+			<!--exibe a div do formulário-->
+		</div>
+		<div id="form-postagem" style="display: none;">
+			<h2>Nova postagem:</h2>
+			<div>
+				<input id="titulo" type="text" onfocus="this.value=''" required />
+				<span class="floating-label">&nbsp;Título da postagem &nbsp;</span>
+			</div>
+			<div>
+				<input id="conteudo" type="text" onfocus="this.value=''" required />
+				<span class="floating-label">&nbsp;Conteúdo da postagem &nbsp;</span>
+			</div>
+			<div>
+				<input id="imagem" type="text" onfocus="this.value=''" required />
+				<!--posta o formulário-->
+				<span class="floating-label">&nbsp;URL da imagem &nbsp;</span>
+			</div>
+			<button onclick="postar()">Postar</button>
+		</div>
+		<!--Final formulário de postagem -->
+
+		<div class="postagem">
+			<!--Abertura da postagem 1-->
+
+			<h2>Como deve ser o arranhador para o gato?</h2>
+			<span class="data-postagem">postado em 15 de abril de 2022</span>
+			<img width="620px" src="imagens/arranhador.png">
+			<div class="conteudo">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet massa mattis tellus egestas
+				porta elementum mollis mi. Duis mattis at orci a sollicitudin. Nam consectetur massa in arcu
+				ultricies pharetra. Nunc sed est orci. Suspendisse luctus vitae augue non viverra. Suspendisse
+				sollicitudin molestie erat ut vulputate.
+			</div>
+			<p class="curtir"><a href="">Curtir</a> </p>
+		</div>
+		<!--final da postagem 1-->
+
+
+		<div class="postagem">
+			<!--Abertura da postagem 2-->
+			<h2>Título da postagem 2</h2>
+			<span class="data-postagem">postado em 10 de abril de 2022</span>
+			<img width="620px" src="">
+			<div class="conteudo">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet massa mattis tellus egestas
+				porta elementum mollis mi. Duis mattis at orci a sollicitudin. Nam consectetur massa in arcu
+				ultricies pharetra. Nunc sed est orci. Suspendisse luctus vitae augue non viverra. Suspendisse
+				sollicitudin molestie erat ut vulputate.
+			</div>
+		</div>
+		<!--final da postagem 2-->
+	</div>
+	<!--Final postagens -->
+
+
+	<script src="app/app_feed.js"></script>
+
+</body>
+
+</html>

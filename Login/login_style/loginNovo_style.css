@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Cookie&family=Lato:wght@400;700&family=Water+Brush&display=swap');/*importei fonte do google*/
+
+*{
+    margin: 0;/*Nesse bloco de comando, resetei/zerei as margens e paddings da minha pagina que tem uma margem padrão do navegador*/
+    padding: 0;
+    font-family:'Cookie',sans-serif/*Selecionei a font cookie e se eça não estiver disponivel, utilixo a sans-serif*/
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url(../Imagens/Plano\ fundo\ animais.PNG);/*Selecionei minha imagem de background*/
+    background-repeat: no-repeat;/*Utilizei para que a imagem não se repita na tela*/
+    background-size: cover;/*Para cobrir todo o espaço*/
+    background-attachment: fixed;/*Para cobrir toda nossa tela*/
+}
+
+
+#Cabecalho{
+    background-color: #f7b600;
+	text-align: center;
+    opacity: 0.15;
+}
+
+.containerLogin{
+    display: flex;/*Utilizar flex-box*/
+    justify-content:center;/*Centralizar os conteudos dessa classe independente do tmaanho da tela*/
+    width: 100%;/*Garantir que ele vai cobrir 100% da area que ele ocupar*/
+    align-items:center;
+    justify-items:center;
+    flex-shrink: 0;
+    flex-wrap:wrap;
+    position: absolute;
+    left: 50%; /*Coloco 50% de margem a esquerda*/
+    top: 40%;/*Coloco 40% de margem superior*/
+    transform: translate(-50%,-50%);/*Utilizo o translate para tirar a diferença utilizando porcentagem e centralizar 
+    na horizontal e na vertical deixar alinhado um pouco acima e se adaptar a qualquer tamanho de tela*/
+}
+
+.infoLogin{
+    background-color: #ffffff50;/*Defini a cor da minha classe card*/
+    padding: 30px;/*Defini um padding de 30px ´ra não ficar colado*/
+    border-radius: 4%;/*Arrendonda as bordas da minha classe card*/
+    box-shadow: 3px 3px 1px 0px #00000060;/*Defini uma sombra para a classe card*/
+}
+
+h1{
+    text-align: center;/*Alinhei o h1 ao centro*/
+    margin-bottom: 20px;/*Defini uma margem inferior para o h1 não ficar muito grudado nos elemntos abaixo*/
+    color:rgba(245, 172, 35, 0.761)
+}
+
+.userSenha input{
+    margin-top: 8px;
+    width: 100%;/*Defini largura 100% para pegar 100% da nossa tela*/
+    padding: 5px 5px; /*Adicionei um espaçamento interno de 5px em cima e embaixo*/
+    display: inline-block;/*Utilizei o display inline block para fixar numa linha e nada mais ocupar essa linha açém dele*/
+    border: 0;/*Retirei as bordas dele*/
+    /*outline: none;*/ /*Retira aquela linha uqe fica em volta quando clico no usuario ou senha*/
+    font-size: 16px;/*Defini o tamanho da fonte em 16px*/
+    transition: all .3s ease-in-out;
+    border-radius: 0;
+    outline:0;/*Retiro a linha da borda do input qndo clico com o mouse*/
+}
+
+.userSenha{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    font-size: 22px;
+}
+
+input:focus{
+        border-color: aquamarine;
+        box-shadow: 0 0 0 3px #e7ffff;
+        caret-color: azure;
+}
+
+
+.userSenha input:focus{
+ 
+}
+
+.userSenha label{
+    color:black;/*Defini a cor das minhas label's como pretas*/
+    pointer-events: none;/*Defini que não aconteça nada qndo passo o mouse sobre a label*/
+    position: absolute; /*Para ela ficar por cima de qualquer coisa dentro de um espaço relativo da label */
+    top:0;/*Defini altura 0 para jogar usuário e senha para cima das label's*/
+    left:0;/*Defini 0 para ficarem posicionadas a esquerda*/
+    transition: all .3s ease-out;/*Defini uma transição quando retiro o clique do mouse das label's*/
+}
+
+.userSenha input:focus + label{ /*Quando dou o fucos, aplico as caracteristicas abaixo*/
+    font-size: 18px;
+    margin-top: 0;/*A margin top sobe de forma leve pois existe a transição*/
+    color:coral;
+}
+
+.fa-eye{
+    margin-top: 12%;
+    display: flex;
+    position: absolute;
+    top: 0 ;/*Preciso fazer o top dele ser o mesmo top da minha label wndo não estou no focus*/
+    right: 0;
+    cursor: pointer;
+    color: gray;
+    opacity: 0.5;
+}
+
+button{
+    width: 6vw;
+    background-color: rgb(16, 187, 16);
+    border: none;
+    color: white;
+    padding: 7px;
+    font-size: 16pt;
+    margin-top: 20px;/*Defini margin para ficar um pouco mais afastado dos input's*/
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{/*Qndo agente passar o mouse em cima desse botão*/
+    background-color: rgba(245, 172, 35, 0.761);
+    transition: all .1s ease-out;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    display: flex;
+    margin-top: 10% ;/*Defini uma margem de 10% para dar espaçamento entre a linha de hr e o botão entrar*/
+    margin-bottom: 10%;/*Defini uma margem de 10% para dar espaçamento entre a linha de hr e o paragrafo*/
+    width: 60%;
+    /* margin-left: 0;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    justify-items: center; */
+}
+
+p{
+    font-size: 16pt;
+    text-align: center;
+}
+
+a{
+    color: rgb(192, 49, 49);
+    font-weight: bold;/*Deixei o cadastre-se em negrito*/
+    text-decoration: none; /*Para retirar a linha que fica embaixo do link*/
+}
+
+a:hover{
+    color: orchid;
+    transition: all .1s ease-out;
+}
+
+footer{
+    flex-shrink: 0;
+    display: flex;/*Possibilita que meus elementos fiquem na memsa linha*/
+    /* flex-wrap:wrap; */
+    justify-content:space-between;
+    font-size: 14px;
+    color:#f7b600;
+    width: 100%;
+    bottom: 0;
+    position:absolute;
+    align-items:flex-end /*Alinha os elementos do footer ao final da página*/
+}
+
+.classMoldura{
+    display: flex;
+}
+
+#imgGaiola{
+    height: 9vh;
+    width: 8vw;
+}
+
+#divGaiola{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+#social{
+    font-size: 3vh;
+    color:orange;
+    margin-left: -3vw;
+}
+
+
+
+#moldura{
+    margin-top: -5vh;
+    height: 20vh;
+    width: 10vw;
+    z-index: 20;
+    /* position: relative; */
+    /* margin-top: 8%;
+    position: absolute; /*Defini position relative para alterar a ordem de empilhamento 
+    natural dos objetos e fazer com que a moldura ficasse sobre a imagem, uma vez que 
+    apenas o z-index não estava funcionando  */
+}
+
+.galery{
+    width: 7vw;
+    height: 14vh;
+    overflow: hidden;/*Alinha as imagens uma atras da outra*/
+    border-radius: 15px;
+    box-shadow: 5px 10px 50px 15px white;
+    margin-left: -50%;
+    margin-top: -3%;
+    /* max-width: max-content;
+    max-height: max-content;
+    margin-top: 100%;
+    margin-left: 15%;
+    position: relative; */
+}
+
+.galery .fotos {
+   width: 500%; 
+   animation-name: animacao;
+   animation-duration: 25s;
+   animation-iteration-count: infinite;
+   max-width: max-content;
+}
+
+.galery .fotos img {
+    width: 19.85%;
+}
+
+/* section{
+    margin-left: 800px;
+    margin-top: 800px;
+} */
+
+@keyframes animacao{
+    0% {margin-left: 0; }
+    20% {margin-left: 0;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+    100%{margin-left: -400%;}
+
+}
+
+#msgErro{
+    text-align: center;
+    color: red;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+

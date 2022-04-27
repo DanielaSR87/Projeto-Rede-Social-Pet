@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Pet</title>
+    <link rel="stylesheet" href="./login_style/loginNovo_style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="../ícones/favicon.ico">
+</head>
+<body>
+    <div class="containerLogin">
+        <div class="infoLogin">
+            <h1>Login</h1>
+            <div id="msgErro"></div>
+            <div class="userSenha">
+                <input type="text" id="usuario" placeholder=""required>
+                <label id="usuarioLabel" for="usuario">Usuario</label>
+            </div>
+
+            <div class="userSenha">
+                <input type="password" id="senha" placeholder="" required>
+                <label id="senhaLabel" for="senha">Senha</label>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+
+            <div class="botao">
+                <button onclick="entrar()">Entrar</button> <!--Criação botão entrar-->
+            </div>
+            <div>
+               <hr>  <!-- Acrescenta uma linha abaixo dos botões -->
+            </div>
+            <p>Não tem uma conta?
+                <a href="./cadastro.html">Cadastre-se</a>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        
+        <div class="classMoldura">
+            <img id="moldura" src="./Imagens/moldura_pet_2_png-removebg-preview.png" alt="Moldura-Imagem">    
+            <section class="galery">
+                <div class="fotos">
+                    <img src="./Imagens/foto1.jpg" alt="Foto1">
+                    <img src="./Imagens/foto3.jpg" alt="Foto2">
+                    <img src="./Imagens/foto4.jpg" alt="Foto3">
+                    <img src="./Imagens/foto6.jpg" alt="Foto4">
+                    <img src="./Imagens/foto1.jpg" alt="Foto1">
+                </div>
+            </section>
+        </div>
+     <p id="social">Social Pet @ 2022</p> 
+     <div id="divGaiola">
+        <img id="imgGaiola" src="./Imagens/bird-3879179.png" alt="imagem-gaiola"> 
+        <p><a href="#">Denuncie 
+        </a>abusos e cativeiros!!!</p>
+     </div>        
+    </footer>
+    <script src="./login_app/login_app.js"></script>          
+</body>
+</html>
