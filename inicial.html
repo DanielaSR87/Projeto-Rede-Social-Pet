@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="style/style_inicial.css">
     <link rel="icon" type="image/x-icon" href="ícones/favicon.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -18,7 +19,7 @@
     <header>
         <!--Cabeçalho-->
         <nav id="area-cabecalho">
-            <img id="logo"src="./My project.png" alt="">
+            <img id="logo" src="./My project.png" alt="">
         </nav>
     </header>
     <!--Fim cabeçalho-->
@@ -30,8 +31,8 @@
 
             <!--Menu lateral-->
             <aside id="area_lateral">
-                <h3 id="h3perfil" onclick="openList1()">▸  Perfil</h3>
-                <ul style="display: none" id="ulist">
+                <h3 id="h3perfil" onclick="openList1()">▸ Perfil</h3>
+                <ul class="collapse show" style="display: none" id="ulist">
                     <li class="litop"><a onclick="load_pages('Perfil/perfil.html')">Página inicial</a></li>
                     <hr>
                     <li><a href="dsada">Amigos</a></li>
@@ -40,7 +41,7 @@
                     <hr>
                     <li class="libottom"><a href="dasdas">Eventos</a></li>
                 </ul>
-                <h3 id="adocao" onclick="openList2()">▸  Adoção de animais</h3>
+                <h3 id="adocao" onclick="openList2()">▸ Adoção de animais</h3>
                 <ul style="display: none" id="uladocao">
                     <li class="litop">Adote um animal</li>
                     <hr>
@@ -54,22 +55,32 @@
         </div>
         <!--Fim do Menu lateral-->
 
-        <div id="principal"><!--Principal-->
-            
-        </div><!--Fim principal-->
-        
+        <div id="principal">
+            <!--Principal-->
+
+        </div>
+        <!--Fim principal-->
+
 
 
         <div id="lateral-direita">
             <!--Widget tempo-->
             <aside>
                 <div id="weather">
-                    <div id="ww_1d214251e3300" v='1.20' loc='auto' a='{"t":"horizontal","lang":"pt","ids":[],"cl_bkg":"rgba(247,182,0,1)","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"rgba(255,255,255,1)","cl_moon":"#FFC107","cl_thund":"#FF5722","sl_sot":"celsius","sl_ics":"one_a","font":"Arial","el_whr":3}'><a href="https://weatherwidget.org/pt/" id="ww_1d214251e3300_u" target="_blank">Widget previsão do tempo para site</a> por Weatherwidget.org</div><script async src="https://srv2.weatherwidget.org/js/?id=ww_1d214251e3300"></script></div></aside>
+                    <div id="ww_1d214251e3300" v='1.20' loc='auto'
+                        a='{"t":"horizontal","lang":"pt","ids":[],"cl_bkg":"rgba(247,182,0,1)","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"rgba(255,255,255,1)","cl_moon":"#FFC107","cl_thund":"#FF5722","sl_sot":"celsius","sl_ics":"one_a","font":"Arial","el_whr":3}'>
+                        <a href="https://weatherwidget.org/pt/" id="ww_1d214251e3300_u" target="_blank">Widget previsão
+                            do tempo para site</a> por Weatherwidget.org
+                    </div>
+                    <script async src="https://srv2.weatherwidget.org/js/?id=ww_1d214251e3300"></script>
+                </div>
+            </aside>
         </div>
         <!--Final Widget tempo-->
 
         <aside id="noticias">
-            <iframe width="240" height="450vh" src="https://rss.app/embed/v1/wall/Jl1xoo27kYi5sRut" frameborder="0"></iframe>
+            <iframe width="240" height="450vh" src="https://rss.app/embed/v1/wall/Jl1xoo27kYi5sRut"
+                frameborder="0"></iframe>
         </aside>
 
     </div>
@@ -80,8 +91,9 @@
             Todos os direitos reservados</p>
     </footer>
     <!--Fim rodapé-->
-    <script src="Perfil/perfil_app/perfil_app.js"></script>
 
+    <script src="Perfil/perfil_app/perfil_app.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script type="text/javascript">
         function load_pages(path) {
 
@@ -90,7 +102,7 @@
                 path + '"></object>';
         }
 
-        
+
     </script>
 
 </body>
