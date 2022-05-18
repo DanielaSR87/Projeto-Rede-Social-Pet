@@ -8,11 +8,12 @@
 	--color2: white;
 }
 
+
 *{
 	margin: 0;
 	padding: 0;
 	flex-wrap: wrap;
-	overflow: hidden;
+	
 }
 
 @media (min-width: 576px) { 
@@ -91,7 +92,7 @@ body{
     position:fixed;
     height: 60px;
 	width: 100%;
-	
+	z-index: 1000;
 	
 }
 #botaoMenu{
@@ -175,7 +176,7 @@ body {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	background: #e6e6e6;
 	text-overflow: clip;
-	overflow: hidden;
+	
 	
 	
 }
@@ -268,4 +269,28 @@ main{
 
 .botaobicho{
 	display: none;
+}
+
+#info{
+	margin-top: 10px;
+	padding: 20px;
+	background-color: var(--color2);
+}
+
+.lapinho{
+	margin-left: -22px;
+}
+
+#info p{
+	color: black;
+}
+
+#info input{
+	border: none;
+	width: 300px;
+	outline: none;
+}
+
+#info input:focus, #info input:active{
+	border: solid var(--color) 1px;
 }

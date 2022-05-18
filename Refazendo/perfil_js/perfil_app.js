@@ -17,6 +17,7 @@ function openList1() {
     }
     document.getElementById("h3perfil").innerText = text;
 
+    
 
 }
 
