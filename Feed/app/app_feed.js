@@ -1,3 +1,17 @@
+function corPerfil() {
+    let userWhite = document.getElementById('userWhite')
+    let userOrange = document.getElementById('userOrange')
+    userWhite.style.display = 'inline';
+    userOrange.style.display = 'none';
+}
+
+function corPerfil2() {
+    let userWhite = document.getElementById('userWhite')
+    let userOrange = document.getElementById('userOrange')
+    userWhite.style.display = 'none';
+    userOrange.style.display = 'inline';
+}
+
 function mostraformulario() { // mostra formulário de postagem
     let chamaForm = document.getElementById ("chama-form") // pega a div chama form
     let formPostagem = document.getElementById ("form-postagem") // pega a div form postagem
