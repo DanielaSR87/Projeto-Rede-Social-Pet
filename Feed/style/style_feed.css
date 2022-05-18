@@ -1,43 +1,62 @@
-/*Limpar formatações padrão*/
-html,
-body {
-  height: 100%;
-  width: 100%;
-  margin: 0px;
-  padding: 0px
+:root{
+    --color: #f7b600;;
+	--bkcolor: #e6e6e6;;
+	--color2: white;
+}
+*{
+	margin: 0;
+	padding: 0;
+	flex-wrap: wrap;	
 }
 
-body {
-	font-size: 1em;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	background: #e6e6e6;
+@media (min-width: 576px) { 
 
 }
 
-/***** Formulário para nova postagem *****/
-input:focus ~ .floating-label,
-input:not(:focus):valid ~ .floating-label {
-	top: -20px;
-	bottom: 10px;
-  	left: -50%;
-  	font-size: 11px;
-  	opacity: 1;
-  	color: #ff0000;
-  	height:10px;
-  	background-color: #ffffff;
+@media (min-width: 768px) { 
+	.mysidebar{
+		display:block!important;
+		
+		
+	}
+
+	
+	#botaoMenu{
+		visibility: hidden;
+	}
+	body{
+		background-color: var(--bkcolor)!important;
+		
+	}
+
+
+#logo {
+  color: white;
 }
-.floating-label {
-	position: relative;
-	pointer-events: none;
-	left: -50%;
-	top: 2px;
-	transition: 0.2s ease all;
+.navbar {
+  height: 70px;
 }
+.nav-item {
+  align-items: center;
+}
+
+.mudacor{
+	color: var(--color);
+	padding: 5px;
+	outline: none!important;
+}
+
+.mudacor:hover{
+	color: var(--color2);
+	background-color: var(--color)
+}
+
 #botaoformulario {
-width: 100%;	
-height: 3em;
-border-radius: 8px;
-margin-bottom: 10px;
+  width: 100%;	
+  height: 3em;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 #botaoformulario:hover {
 	background-color: #BDBDBD ;
@@ -63,48 +82,5 @@ margin-bottom: 10px;
 #form-postagem button {
 	width: 100px;
 	border-radius: 2px;
-}
-
-/***** Área de conteúdo principal *****/
-
-
-#area-postagens {
-	width: 80%;
-	margin: 0 auto;
-	height: 100%;
-}
-.postagem {
-	padding: 20px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	background: white;
-	border-radius: 8px;
-	
-}
-.postagem img  {
-	margin-top: 20px;
-	object-fit: contain;
-	max-width: 100%;
-}
-.conteudo {
-	margin-top: 10px;
-	margin: 0;
-	text-align: justify;
-	line-height: 1.5;
-}
-
-.curtir {
-	margin-top: 10px;
-	color: #f7b600;
-}
-
-.curtir a:link, a:visited, a:active {
-	text-decoration: underline;
-}
-
-.curtir a:hover {
-	text-decoration: none;
-	color:#f7b600;
-	border: 1px solid gray;
 }
 
